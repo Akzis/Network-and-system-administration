@@ -41,46 +41,13 @@ onMounted(() => {
   onBeforeUnmount(() => observer.disconnect())
 })
 
-const colorMode = useColorMode()
-function toggleTheme() {
-  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-}
-
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 </script>
 
 <template>
-  <div class="min-h-screen bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-200">
-    <!-- Header -->
-    <header
-      class="sticky top-0 z-30 border-b border-zinc-200 bg-white/80 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/80"
-    >
-      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <div class="flex items-center gap-3">
-          <div class="flex size-9 items-center justify-center rounded-lg bg-emerald-500 text-white">
-            <span class="i-lucide-terminal size-5" />
-          </div>
-          <div>
-            <p class="text-sm font-semibold leading-tight">Модуль 1</p>
-            <p class="text-xs text-zinc-500 dark:text-zinc-400">
-              Сетевое и системное администрирование
-            </p>
-          </div>
-        </div>
-        <button
-          type="button"
-          class="rounded-lg border border-zinc-200 p-2 text-zinc-600 transition hover:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-800"
-          aria-label="Переключить тему"
-          @click="toggleTheme"
-        >
-          <span class="size-5 i-lucide-sun dark:i-lucide-moon" />
-        </button>
-      </div>
-    </header>
-
-    <div class="mx-auto flex max-w-7xl gap-8 px-4 sm:px-6">
+  <div class="mx-auto flex max-w-7xl gap-8 px-4 sm:px-6">
       <!-- Sidebar -->
       <aside class="sticky top-[65px] hidden h-[calc(100vh-65px)] w-64 shrink-0 overflow-y-auto py-8 lg:block">
         <nav class="space-y-1">
@@ -480,6 +447,5 @@ function scrollTo(id: string) {
           Модуль 1 · Сетевое и системное администрирование · конспект
         </footer>
       </main>
-    </div>
   </div>
 </template>
