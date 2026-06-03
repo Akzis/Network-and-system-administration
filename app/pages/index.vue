@@ -321,7 +321,7 @@ function scrollTo(id: string) {
           <p class="mt-2 text-zinc-600 dark:text-zinc-300">Аналогично делаем на другом роутере:</p>
           <CodeBlock
             title="EcoRouter CLI — Router-b"
-            :code='`br-rtr>enable\nbr-rtr#configure terminal\nEnter configuration commands, one per line.  End with CNTL/Z.\nrouter-b(config)#interface tunnel.0\nrouter-b(config-if-tunnel)#description "GRE"\nrouter-b(config-if-tunnel)#ip address 10.10.10.2/30\nrouter-b(config-if-tunnel)#ip tunnel 172.16.2.2 172.16.1.2 mode gre\nrouter-b(config-if-tunnel)#exit\nrouter-b(config)#write memory`'
+            :code='`router-b(config)#interface tunnel.0\nrouter-b(config-if-tunnel)#description "GRE"\nrouter-b(config-if-tunnel)#ip address 10.10.10.2/30\nrouter-b(config-if-tunnel)#ip tunnel 172.16.2.2 172.16.1.2 mode gre\nrouter-b(config-if-tunnel)#exit\nrouter-b(config)#write memory`'
           />
           <p class="mt-2 text-zinc-600 dark:text-zinc-300">
             Также не забудьте поставить маршрут по умолчанию:

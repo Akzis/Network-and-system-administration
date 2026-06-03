@@ -103,6 +103,10 @@ ansible-galaxy collection install cisco.ios
 # Настройка инвентаризационного файла
 vim /etc/ansible/hosts`
 
+const cAnsibleHosts = `server ansible_host=10.10.100.2 ansible_user=sshusser ansible_password=P@ssw0rd ansible_port=2026
+cli ansible_host=10.10.200.2 ansible_user=root ansible_password=toor
+router ansible_host=172.16.1.2 ansible_user=admin ansible_password=admin ansible_connection=network_cli ansible_network_os=ios`
+
 const cAnsibleEco = `Ecorouter(config)# security none`
 
 const cAnsiblePing = `# Проверка доступности всех узлов из инвентаря
@@ -276,7 +280,7 @@ systemctl restart nginx`
 
         <h3 class="mt-6 text-lg font-semibold text-emerald-600 dark:text-emerald-400">4.1. Подготовка управляющей ноды (Linux)</h3>
         <CodeBlock title="bash" :code="cAnsibleNode" />
-        <Figure src="/images/m2_img1.png" caption="Пример инвентаризационного файла /etc/ansible/hosts" />
+        <CodeBlock title="/etc/ansible/hosts" :code="cAnsibleHosts" />
 
         <h3 class="mt-6 text-lg font-semibold text-emerald-600 dark:text-emerald-400">4.2. Подготовка сетевого оборудования (Ecorouter)</h3>
         <p class="mt-2 text-zinc-600 dark:text-zinc-300">
