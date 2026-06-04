@@ -8,6 +8,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       meta: [
+        // Подтверждение прав в Google Search Console
+        { name: 'google-site-verification', content: '-ML7iNpPYmMZp25vlWwAYOqyhC6IqgJXIkgZTw2v8xg' },
         // Подтверждение прав в Яндекс.Вебмастере.
         // Замени значение content на код из webmaster.yandex.ru → Настройки → Права доступа
         { name: 'yandex-verification', content: 'bfc4bede51030a9c' },
