@@ -232,7 +232,7 @@ systemctl restart nginx`
       <section :id="sections[1].id" class="scroll-mt-20 border-t border-zinc-200 py-10 dark:border-zinc-800">
         <h2 class="flex items-center gap-3 text-2xl font-bold">
           <span class="flex size-8 items-center justify-center rounded-lg bg-emerald-500/10 text-sm font-bold text-emerald-600 dark:text-emerald-400">2</span>
-          Настройка файловой системы NFS на сервере HQ-SRV
+          Настройка файловой системы NFS
         </h2>
         <p class="mt-4 text-zinc-600 dark:text-zinc-300">
           Настройка выполняется в два этапа: на стороне сервера и на стороне клиента.

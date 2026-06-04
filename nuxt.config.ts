@@ -5,6 +5,16 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      meta: [
+        // Подтверждение прав в Яндекс.Вебмастере.
+        // Замени значение content на код из webmaster.yandex.ru → Настройки → Права доступа
+        { name: 'yandex-verification', content: 'bfc4bede51030a9c' },
+      ],
+    },
+  },
+
   modules: [
     '@nuxt/ui',
     '@vueuse/nuxt',
