@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Модуль 1 — Сетевое и системное администрирование',
+  title: 'Сетевое и системное администрирование',
   meta: [
     {
       name: 'description',
@@ -444,7 +444,7 @@ function scrollTo(id: string) {
         </section>
 
         <footer class="border-t border-zinc-200 py-8 text-center text-sm text-zinc-400 dark:border-zinc-800">
-          Модуль 1 · Сетевое и системное администрирование · конспект
+          Сетевое и системное администрирование · конспект
         </footer>
       </main>
   </div>
