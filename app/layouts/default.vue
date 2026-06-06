@@ -4,6 +4,7 @@ const modules = [
   { to: '/module-2', label: 'Корпоративная ИТ-инфраструктура', sub: 'Корпоративная ИТ-инфраструктура' },
   { to: '/module-3', label: 'Практические аспекты администрирования', sub: 'Практические аспекты администрирования' },
   { to: '/module-4', label: 'Настройка устройств стенда', sub: 'Настройка устройств стенда' },
+  { to: '/module-5', label: 'Службы: Samba, NFS, Ansible, Docker', sub: 'Службы: Samba, NFS, Ansible, Docker, Web' },
 ]
 
 const route = useRoute()

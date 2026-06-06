@@ -106,10 +106,6 @@ interface tunnel.0
 ip ospf authentication message-digest
 ip ospf message-digest-key 1 md 5 P@ssw0rd
 exit
-interface fw
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md 5 P@ssw0rd
-exit
 write memory`
 
 const cBrRtrOspf = `router ospf 1
@@ -121,6 +117,10 @@ network 10.10.10.0/30 area 0
 network 10.20.10.1/30 area 0
 exit
 interface tunnel.0
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md 5 P@ssw0rd
+exit
+interface fw
 ip ospf authentication message-digest
 ip ospf message-digest-key 1 md 5 P@ssw0rd
 exit
