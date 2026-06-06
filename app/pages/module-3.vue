@@ -429,7 +429,7 @@ chmod +x CyberBackup
       <!-- Hero -->
       <div class="mb-10">
         <p class="mb-2 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400">
-          <span class="i-lucide-book-open size-3.5" /> Модуль 3 · статья
+          <span class="i-lucide-book-open size-3.5" /> Конспект-шпаргалка
         </p>
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
           Практические аспекты администрирования корпоративной инфраструктуры
@@ -642,7 +642,7 @@ chmod +x CyberBackup
       </section>
 
       <footer class="border-t border-zinc-200 py-8 text-center text-sm text-zinc-400 dark:border-zinc-800">
-        Модуль 3 · Практические аспекты администрирования · конспект
+        Практические аспекты администрирования · конспект
       </footer>
     </main>
   </div>

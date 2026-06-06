@@ -184,7 +184,7 @@ systemctl restart nginx`
       <!-- Hero -->
       <div class="mb-10">
         <p class="mb-2 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-400">
-          <span class="i-lucide-book-open size-3.5" /> Модуль 2 · статья
+          <span class="i-lucide-book-open size-3.5" /> Конспект-шпаргалка
         </p>
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">
           Комплексное руководство по настройке корпоративной ИТ-инфраструктуры
@@ -328,7 +328,7 @@ systemctl restart nginx`
       </section>
 
       <footer class="border-t border-zinc-200 py-8 text-center text-sm text-zinc-400 dark:border-zinc-800">
-        Модуль 2 · Корпоративная ИТ-инфраструктура · конспект
+        Корпоративная ИТ-инфраструктура · конспект
       </footer>
     </main>
   </div>
